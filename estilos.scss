@@ -1,0 +1,145 @@
+$color1:rgba(41, 79, 129, 0.856);
+$color2:#f5f5dc;
+$color3:#b2afc7;
+$color4:#000000;
+
+$redes:(facebook: #2956a3,
+    instagram: #640964,
+    twitter: #51aff8);
+
+@mixin imagen {
+    background-size: cover;
+    background-position: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.fondo-nav {
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    color: $color3;
+    margin-bottom: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    background-color: $color2;
+}
+
+.container .card {
+    width: 300px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img {
+    width: 300px;
+    height: 220px;
+}
+
+.container .card h4 {
+    font-weight: 600;
+}
+
+.container .card p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+
+
+h2 {
+    @extend h1
+}
+
+.ubicacion {
+    width: 100%;
+    margin: 0;
+    background-color: $color2;
+
+    .dire {
+        text-align: center;
+    }
+}
+
+.footer {
+    width: 100%;
+    grid-area: footer;
+    background-color: $color2;
+    font-size: 22px;
+    padding: 10px;
+    text-align: center;
+
+    .redess {
+        color: $color2;
+        letter-spacing: 15px;
+    }
+}
+
+@each $red,
+$colores in $redes {
+    .fa-#{$red} {
+        color: $colores;
+    }
+}
+
+/*CONTACTO*/
+
+.registro {
+    text-align: center;
+    font-size: 25px;
+    background-color: $color2;
+}
+
+
+/*beneficios*/
+
+.contenedor2 {
+    background-color: $color2;
+    width: 100%;
+
+    h3 {
+        text-align: center;
+        color: $color3;
+    }
+
+    p {
+        color: $color4;
+        padding: 8px;
+        text-align: left;
+        margin: 0;
+    }
+}

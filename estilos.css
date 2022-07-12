@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+.fondo-nav {
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+
+h1,
+h2 {
+  text-align: center;
+  padding: 20px;
+  font-size: 25px;
+  color: #b2afc7;
+  margin-bottom: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  background-color: #f5f5dc;
+}
+
+.container .card {
+  width: 300px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.container .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img {
+  width: 300px;
+  height: 220px;
+}
+
+.container .card h4 {
+  font-weight: 600;
+}
+
+.container .card p {
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.container .card a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.ubicacion {
+  width: 100%;
+  margin: 0;
+  background-color: #f5f5dc;
+}
+
+.ubicacion .dire {
+  text-align: center;
+}
+
+.footer {
+  width: 100%;
+  grid-area: footer;
+  background-color: #f5f5dc;
+  font-size: 22px;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer .redess {
+  color: #f5f5dc;
+  letter-spacing: 15px;
+}
+
+.fa-facebook {
+  color: #2956a3;
+}
+
+.fa-instagram {
+  color: #640964;
+}
+
+.fa-twitter {
+  color: #51aff8;
+}
+
+/*CONTACTO*/
+.registro {
+  text-align: center;
+  font-size: 25px;
+  background-color: #f5f5dc;
+}
+
+/*beneficios*/
+.contenedor2 {
+  background-color: #f5f5dc;
+  width: 100%;
+}
+
+.contenedor2 h3 {
+  text-align: center;
+  color: #b2afc7;
+}
+
+.contenedor2 p {
+  color: #000000;
+  padding: 8px;
+  text-align: left;
+  margin: 0;
+}
+
+/*# sourceMappingURL=estilos.css.map */
